@@ -34,5 +34,22 @@ body{
 }
 .result-container{
     background-color: rgba(255,255,255,0.8);
-    border: 2px s;
+    border: 2px solid #333;
+    max-width:200px;
+    text-align:center;
+    margin:0 auto;
+}
+.reset{
+    text-align:center;
+    margin-top:20px;
+}
+#reset-button{
+    border:2px solid black;
+    color:black;
+    cursor:pointer;
+}
+#reset-button:hover{
+    background-color: black;
+    color:white;
+    transition: background-color ;
 }
