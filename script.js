@@ -19,6 +19,6 @@ function checkWinner(){
     ];
     for(const combo of winningCombos){
         const [a,b,c]=combo;
-        
+        if(cells[a].textContent&&cells[a].textContent===cells[b].textContent)
     }
 }
