@@ -19,6 +19,11 @@ function checkWinner(){
     ];
     for(const combo of winningCombos){
         const [a,b,c]=combo;
-        if(cells[a].textContent&&cells[a].textContent===cells[b].textContent)
+        if(cells[a].textContent&&cells[a].textContent===cells[b].textContent && cells[a].textContent===cells[c].textContent){
+            resultText.textContent='Player ${currentPlayer} wins!';
+            isGameActive=false;
+            resetButton.disabled=false;
+        }
     }
+    if ([...cells].every)
 }
