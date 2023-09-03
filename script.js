@@ -4,5 +4,6 @@ const resetButton=document.getElementById('reset-button');
 let currentPlayer='X';
 let isGameActive=true;
 function handleCellClick(event){
-    
+    const cell=event.target;
+    if (cell)
 }
