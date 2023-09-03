@@ -34,5 +34,14 @@ function checkWinner(){
 function handleReset(){
     cells.forEach(cell=>{
         cell.textContent='';
-    })
+    });
+    currentPlayer='X';
+    resultText.textContent="player X's turn";
+    isGameActive=true;
+    resetButton.disabled=true;
 }
+cells.forEach(cell=>{
+    cell.addEventListener('click',handleCellClick);
+});
+resetButton.addEventListener('click',handleReset);
+resultText.textContent="player X's turn";
