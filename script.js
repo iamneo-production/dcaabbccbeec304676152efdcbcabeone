@@ -25,5 +25,14 @@ function checkWinner(){
             resetButton.disabled=false;
         }
     }
-    if ([...cells].every)
+    if ([...cells].every(cell=>cell.textContent !=='')){
+        resultText.textContent="It's a draw!";
+        isGameActive=false;
+        resetButton.disabled=false;
+    }
+}
+function handleReset(){
+    cells.forEach(cell=>{
+        cell.textContent='';
+    })
 }
