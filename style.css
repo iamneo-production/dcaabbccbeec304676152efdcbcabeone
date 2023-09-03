@@ -10,5 +10,15 @@ body{
     font-size: 50px;
 }
 .row{
-    
+    display:flex;
+    justify-content:center;
+}
+.btn{
+    border:2px solid #333;
+    width: 75px;
+    height:75px;
+    text-align:center;
+    font-size:50px;
+    font-weight:500;
+    background-color: 
 }
